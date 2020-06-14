@@ -122,6 +122,7 @@ h6 span {
 span.id {
     padding-right: 5px;
     letter-spacing: 2px;
+    font-weight: bold;
 }
 
 p {
@@ -212,5 +213,8 @@ img {
     max-width: 100%;
 }
 
+.auto-ID {
+    list-style: none;
+}
 
-/* Main stylesheet to be used in all documents. */
+/* stylesheet to be used specifically for SRS. */
