@@ -217,4 +217,41 @@ img {
     list-style: none;
 }
 
+.sign-off {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.sign-off h1 {
+    margin: 40px 0 10px
+}
+
+.sign-off .sign-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.sign-off .sign-row > div {
+    display: flex;
+    flex: 1;
+    height: 25px;
+}
+
+.sign-off .sign-row .blank {
+    flex: 1;
+    border-bottom: 1px solid black;
+    margin: 0 10px 10px;
+}
+
+.sign-off ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.sign-off ul > li {
+    width: 33%;
+}
+
 /* stylesheet to be used specifically for SRS. */
