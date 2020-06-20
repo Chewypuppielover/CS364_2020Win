@@ -217,6 +217,10 @@ img {
     list-style: none;
 }
 
+.auto-ID > li > ul {
+    list-style: disc;
+}
+
 .sign-off {
     display: flex;
     flex-direction: column;
