@@ -538,20 +538,46 @@
 					</ul>
 				</div>
 
-				<h3><span class="id">PO.3</span> User Characteristics </h3>
+				<h3><span class="id">PO.3</span> User Characteristics</h3>
 				<a name="user"></a>
 				<p>Uvents will have 3 types of users: consumer, commercial, and admin.</p>
 				<div class="indent">
-					<h4 class="big"><span class="id">PO.3.1</span> Consumer User</h4>
-					<p>The consumers user perceives Uvents as a way to be notified of events in their local area. Uvents will be a platform where the consumer user receives notifications of the events posted. Consumer users will be able to view group events posted by commercial users. Consumer users will have the ability to create events for themselves and other consumer users to attend. Consumer users have the ability to communicate with other consumer users within an event.</p>
+					<h4 class="big"><span class="id">PO.3.1</span> Consumer Users</h4>
+					<p>Uvents is a platform where the consumer user receives notifications of the events posted. Consumer users can view events posted by commercial users. Consumer users will have the ability to create group events for themselves and other consumer users to attend. Consumer users will be able to communicate with other consumer users within a group event.</p>
 					<h4 class="big"><span class="id">PO.3.2</span>Commercial Users</h4>
-					<p>From the perspective of the commercial user, Uvents is a platform where they can advertise the products and services they offer. The commercial user’s goal is to acquire more customers and increase visibility in the local community. Each month, the commercial user will have the ability to post one group event and bid against other consumer users for higher visibility for that group event within Uvents. Group events posted by higher bidding commercial users will be seen more often by consumer users.</p>
+					<p>Uvents is a platform where commercial users can advertise the products and services they offer. The commercial user’s goal is to acquire more customers and increase visibility in the local community. Each month, the commercial user will have the ability to post one group event and bid against other commercial users for higher visibility for that group event within Uvents. Group events posted by higher bidding commercial users will be seen more often by consumer users.</p>
 					<h4 class="big"><span class="id">PO.3.3</span>Admin Users</h4>
 					<p>The admin users’ job is to maintain and moderate Uvents, such that the commercial and consumer users are satisfied with its workings and all issues are resolved quickly and efficiently.</p>
-					<h4 class="big"><span class="id">PO.3.4</span>Workflows</h4>
-					<img alt="Workflow Consumer User" title="ConsChart" src="./images/workflow-consumer.png" />
-					<img alt="Workflow Commercial User" title="CommChart" src="./images/workflow-commercial.png" />
-					<img alt="Workflow Admin User" title="AdminChart" src="./images/workflow-admin.png" />
+					
+					<h4 class="big"><span class="id">PO.3.4</span>Consumer User Workflows</h4>
+					<p>PO.3.4.1 Login Workflow<br>
+					The process the consumer user will follow when logging in.</p>
+					<img alt="Workflow Consumer User" title="ConsChart" src="./images/Cons Start.png" />
+					<p>PO.3.4.2 Home Screen Workflow<br>
+					The process the consumer user will follow when editing profile information and seeing joined group events or messages.</p>
+					<img alt="Workflow Commercial User" title="CommChart" src="./images/Cons Home.png" />
+					<p>PO.3.4.3 Event Workflow<br>
+					The process the consumer user will follow when creating and joining a group event.</p>
+					<img alt="Workflow Admin User" title="AdminChart" src="./images/Cons Event.png" />
+					
+					<h4 class="big"><span class="id">PO.3.5</span>Commercial User Workflows</h4>
+					<p>PO.3.5.1 Login Workflow<br>
+					The process the commercial user will follow when logging in.</p>
+					<img alt="Workflow Consumer User" title="ConsChart" src="./images/Comm Start.png" />
+					<p>PO.3.5.2 Home Screen Workflow<br>
+					The process the commercial user will follow when editing profile information and viewing events.</p>
+					<img alt="Workflow Commercial User" title="CommChart" src="./images/Comm Home.png" />
+					<p>PO.3.5.3 Event Workflow<br>
+					The process the commercial user will follow when viewing past events and creating events.</p>
+					<img alt="Workflow Admin User" title="AdminChart" src="./images/Comm Event.png" />
+					
+					<h4 class="big"><span class="id">PO.3.6</span>Admin User Workflows</h4>
+					<p>PO.3.6.1 Login Workflow<br>
+					The process admin user will follow when creating or logging into an account on the Uvents application.</p>
+					<img alt="Workflow Consumer User" title="ConsChart" src="./images/Admin Start.png" />
+					<p>PO.3.6.2 Home Screen Workflow<br>
+					The process followed by admin user when editing or deleting events and group events created by commercial and consumer users and when editing or deleting consumer user or commercial user accounts.</p>
+					<img alt="Workflow Commercial User" title="CommChart" src="./images/Admin Home.png" />
 				</div>
 
 				<h3><span class="id">PO.4</span> Limitations </h3>
@@ -786,67 +812,46 @@
 		<p>The Specification explains the detailed requirements for the Uvents application. The Specification covers external interfaces, functionality, usability, performance, database, design constraints, and software system attributes requirements for
 			the Uvents application. The Specification also covers supporting information found from using the elicitation techniques for the Product Features.</p>
 		<div class="indent">
-			<h2><span class="id">3.1</span> External interfaces</h2>
+			<h2><span class="id">3.1</span> External Interfaces Specification</h2>
 			<a name="Interface"></a>
 			<div class="indent">
 				<h3>EIS.1 Database</h3>
 				<div class="indent">
 					<p>A database will be used to store Uvents account and event information. Specific requirements for the database can be found in section LDR.</p>
-					<ul class="unlabeled">
-						<li>EIS.1.1 The database shall store consumer user accounts [PF.1.1, PF.1.5].</li>
-						<li>EIS.1.2 The database shall store commercial user accounts [PF.2.1, PF.2.2, PF.2.5, PF.2.7].</li>
-						<li>EIS.1.3 The database shall store admin user accounts [PF.3.4, PF.3.6].</li>
-						<li>EIS.1.4 The database shall store events [PF.2.14, PF.2.17, PF.2.18].</li>
-						<li>EIS.1.5 The database shall store group events [PF.1.4, PF.1.8, PF.1.9, PF.1.12].</li>
-						<li>EIS.1.6 The database shall store monthly bidding information for commercial user accounts [PF.2.21].</li>
-						<li>EIS.1.7 The database shall store information about connected consumer user social media accounts [PF.1.6].</li>
-						<li>EIS.1.8 The database shall store information about connected commercial user social media accounts [PF.2.22].</li>
-						<li>EIS.1.9 Upon request commercial users shall receive a report of their bidding history [2.1.6].</li>
-					</ul>
+					<p>EIS.1.1 The database shall store consumer user accounts [PO.2.1.1].</p>
+					<p>EIS.1.2 The database shall store commercial user accounts [PO.2.2.1].</p>
+					<p>EIS.1.3 The database shall store admin user accounts [PO.2.3.6].</p>
+					<p>EIS.1.4 The database shall store events [PO.2.2.9].</p>
+					<p>EIS.1.5 The database shall store group events [PO.2.1.7].</p>
+					<p>EIS.1.6 The database shall store monthly bidding information for commercial user accounts [PO.2.2.15, PO.2.2.16].</p>
+					<p>EIS.1.7 The database shall store information about connected consumer user social media accounts [PO.2.1.6].</p>
+					<p>EIS.1.8 The database shall store information about connected commercial user social media accounts [PO.2.2.15, PO.2.2.17].</p>
+					<p>EIS.1.9 Upon request commercial users shall receive a report of their bidding history [PO.2.2.21].</p>
 				</div>
-				<h3>EIS.2 Google Maps/GPS</h3>
-				<div class="indent">
-					<p>Google Maps API will be used to map the available local events and group events posted by commercial users and consumer users.</p>
-					<ul class="unlabeled">
-						<li>EIS.2.1 The map interface shall allow consumer users to view local events on a map [2.1.7, 2.1.11, 2.1.13]</li>
-						<li>EIS.2.2 The map interface shall allow consumer users to view their distance from local event locations.</li>
-						<li>EIS.2.3 The map interface shall allow consumer users to view directions to local event locations.</li>
-					</ul>
-				</div>
-				<h3>EIS.3 Facebook</h3>
+				<h3>EIS.2 Facebook</h3>
 				<div class="indent">
 					<p>Facebook’s API will be used according to the standards of the stakeholders allowing users to share activities on the social platform.</p>
-					<ul class="unlabeled">
-						<li>EIS.3.1 Consumer users shall have the ability to share events on the Facebook platform if logged into the user’s Facebook account. [1.3.1.4.1]</li>
-					</ul>
+					<p>EIS.3.1 Consumer users shall have the ability to share events on the Facebook platform if logged into the user’s Facebook account.[PO.1.4.1]</p>
 				</div>
-				<h3>EIS.4 Instagram </h3>
+				<h3>EIS.3 Instagram </h3>
 				<div class="indent">
 					<p>Instagram's API will be used according to the standards of the stakeholders allowing users to share activities on the social platform.</p>
-					<ul class="unlabeled">
-						<li>EIS.4.1 Consumer users shall have the ability to share events on the Instagram platform if logged into the consumer user’s Instagram account. [1.3.1.4.1]</li>
-					</ul>
+					<p>EIS.4.1 Consumer users shall have the ability to share events on the Instagram platform if logged into the consumer user’s Instagram account. [PO.1.4.1]</p>
 				</div>
-				<h3>EIS.5 Twitter</h3>
+				<h3>EIS.4 Twitter</h3>
 				<div class="indent">
 					<p>Twitter’s API will be used according to the standards of the stakeholders allowing users to share activities on the social platform.</p>
-					<ul class="unlabeled">
-						<li>EIS 5.1 Consumer users shall have the ability to share events on the Twitter platform if logged into the consumer user’s Twitter account. [1.3.1.4.1]</li>
-					</ul>
+					<p>EIS 5.1 Consumer users shall have the ability to share events on the Twitter platform if logged into the consumer user’s Twitter account. [PO.1.4.1]</p>
 				</div>
-				<h3>EIS.6 PayPal</h3>
+				<h3>EIS.5 PayPal</h3>
 				<div class="indent">
 					<p>PayPal Developer API will be used by commercial users to place bids.</p>
-					<ul class="unlabeled">
-						<li>EIS.6.1 API shall allow commercial users to pay Uvents' charges each month. [PF.2.3]</li>
-					</ul>
+					<p>EIS.6.1 API shall allow commercial users to pay Uvents' charges each month. [PO.2.2.3]</p>
 				</div>
-				<h3>EIS.7 Google Pay</h3>
+				<h3>EIS.6 Google Pay</h3>
 				<div class="indent">
 					<p>Google Pay API will be used by commercial users to place bids.</p>
-					<ul class="unlabeled">
-						<li>EIS.7.1 API shall allow commercial users to pay Uvents' charges each month. [PF.2.3]</li>
-					</ul>
+					<p>EIS.7.1 API shall allow commercial users to pay Uvents' charges each month. [PO.2.2.3]</p>
 				</div>
 				<a name="Functions"></a>
 			</div>
@@ -1792,9 +1797,38 @@
 				be separated into different steps in order to validate the different parts. Each verification statement will map to one requirement specifically. Each verification statement will include the testing technique, a method to accomplish that
 				technique, and the workflow step. </p>
 			<a name="FV"></a>
-
-
-			<h2><span class="id">3.2</span>Functions Verification</h2>
+			<h2><span class="id">4.1</span>External Interfaces Verification</h2>
+			<div class="indent">
+				<p>The External Interfaces verification defines the verification for External interfaces that pertain to the Uvents application.</p>
+				<h3>EIV.1 Database Verification</h3>
+				<p>EIV.1.1 Verify that the database can store consumer user accounts [EIS.1.1].</p>
+				<p>EIV.1.2 Verify that the database can store commercial user accounts [EIS.1.2].</p>
+				<p>EIV.1.3 Verify that the database can store admin user accounts [EIS.1.3].</p>
+				<p>EIV.1.4 Verify that the database can store events [EIS.1.4].</p>
+				<p>EIV.1.5 Verify that the database can store group events [EIS.1.5].</p>
+				<p>EIV.1.6 Verify that the database can store monthly bidding information for commercial user accounts [EIS.1.6].</p>
+				<p>EIV.1.7 Verify that the database can store information about connected consumer user social media accounts [EIS.1.7].</p>
+				<p>EIV.1.8 Verify that the database can store information about connected commercial user social media accounts [EIS.1.8].</p>
+				<p>EIV.1.9 Verify that upon request commercial users can receive a report of their bidding history [EIS.1.9].</p>
+				<h3>EIV.2 Share events via Facebook Verification</h3>
+				<p>EIV.2.1 Verify that consumer users can log into Facebook account [EIS.2.1].</p>
+				<p>EIV.2.2 Verify that shared event can be posted on the Facebook platform [EIS.2.1].</p>
+				<p>EIV.2.3 Verify that the shared event can load event details on the Uvents app [EIS.2.1].</p>
+				<h3>Share events via Instagram Verification</h3>
+				<p>EIV.3.1 Verify that consumer users can log into Instagram account [EIS.3.1].</p>
+				<p>EIV.3.2 Verify that shared event can be posted on the Instagram platform [EIS.3.1].</p>
+				<p>EIV.3.3 Verify that the shared event can load event details on the Uvents app [EIS.3.1].</p>
+				<h3>Share events via Twitter Verification</h3>
+				<p>EIV.4.1 Verify that consumer users can log into Twitter account [EIS.4.1].</p>
+				<p>EIV.4.2 Verify that shared event can be posted on the Twitter platform [EIS.4.1].</p>
+				<p>EIV.4.3 Verify that the shared event can load event details on the Uvents app [EIS.4.1].</p>
+				<h3>PayPal Verification</h3>
+				<p>EIV.5.1 Verify that the API allows commercial users to pay Uvents’ charges each month [EIS.5.1].</p>
+				<h3>Google Pay Verification</h3>
+				<p>EIV.6.1 Verify that the API allows commercial users to pay Uvents’ charges each month [EIS.6.1].</p>
+			</div>
+			
+			<h2><span class="id">4.2</span>Functions Verification</h2>
 			<div class="indent">
 				<u><h3>Consumer</h3></u>
 			</div>
