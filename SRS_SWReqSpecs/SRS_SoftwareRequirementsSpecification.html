@@ -254,6 +254,14 @@
 				<td>3</td>
 				<td>Made revisions to Sections 1, 2, 3, 4, 5, the title page, table of contents, and revision table. Additionally, the sign off page and list of participants were added</td>
 				<td>
+					<a href=http://htmlpreview.github.io/?https://github.com/BroClements/CS364_2020Win/blob/2.4-SRS-version-Final/SRS_SWReqSpecs/SRS_SoftwareRequirementsSpecification.html>
+						https://github.com/BroClements/CS364_2020Win/blob/2.4-SRS-version-Final/SRS_SWReqSpecs/SRS_SoftwareRequirementsSpecification.html
+				  </a></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Made revisions to Sections 1, 2, 3, 4, 5, the title page, table of contents, and revision table. Additionally, the table of figures was added</td>
+				<td>
 					<a href=http://htmlpreview.github.io/?https://github.com/BroClements/CS364_2020Win/blob/2.3-SRS-version-3/SRS_SWReqSpecs/SRS_SoftwareRequirementsSpecification.html>
 					 https://github.com/BroClements/CS364_2020Win/blob/2.3-SRS-version-3/SRS_SWReqSpecs/SRS_SoftwareRequirementsSpecification.html
 				  </a></td>
@@ -264,14 +272,14 @@
 		<div>
 			<h1>Table of Figures</h1><br><br>
 			<div class="center">
-				<a href="">Consumer User Login Workflow</a><br>
-				<a href="">Consumer User Homescreen Workflow</a><br>
-				<a href="">Consumer User Event Workflow</a><br>
-				<a href="">Commercial User Login Workflow</a><br>
-				<a href="">Commercial User Homescreen Workflow</a><br>
-				<a href="">Commercial User Event Workflow</a><br>
-				<a href="">Admin Login Workflow</a><br>
-				<a href="">Admin Home Screen Workflow</a>
+				<a href="" class="s2">Consumer User Login Workflow</a><br>
+				<a href="" class=s2>Consumer User Homescreen Workflow</a><br>
+				<a href="" class=s2>Consumer User Event Workflow</a><br>
+				<a href="" class=s2>Commercial User Login Workflow</a><br>
+				<a href="" class=s2>Commercial User Homescreen Workflow</a><br>
+				<a href="" class=s2>Commercial User Event Workflow</a><br>
+				<a href="" class=s2>Admin Login Workflow</a><br>
+				<a href="" class=s2>Admin Home Screen Workflow</a>
 			</div>
 		</div>
 		<a name="Introduction"></a>
@@ -595,7 +603,7 @@
 
 				<h3><span class="id">PO.4</span> Limitations </h3>
 				<a name="Limitations"></a>
-				<p>The following may present limitations on the functional and non-functional aspects of the application. These limitations outline policies and restrictions that may need to be imposed due to legal, hardware, licensing or other factors.</p>
+				<p>The limitations may present barriers on the functional and non-functional aspects of the application. These limitations outline policies and restrictions that may need to be imposed due to legal, hardware, licensing or other factors.</p>
 				<div class="indent">
 					<h4><span class="id">PO.4.1</span>Legal policies for accepting payments.</h4>
 					<p>The “Electronic Fund Transfer Act” or EFT Act of 1978 states that payments must have the validity of an individual’s written signatures in electronic form such as when transferring through automated teller machines, automating clearinghouse
@@ -621,7 +629,7 @@
 					<h4><span class="id">PO.4.8</span>Mobile device hardware.</h4>
 					<p>The application will be limited to the hardware present on a single mobile device. This includes limitations on access to external storage, internal storage, and RAM. Otherwise, the application may slow down or crash a mobile device
 						in use. </p>
-					<h4><span class="id">PO.4.9</span>Optimal performance with all devices. [IR.8]</h4>
+					<h4><span class="id">PO.4.9</span>Optimal performance among all devices. [IR.8]</h4>
 					<p>The application will be limited by aiming for suitable load speed times and data transfer times as outlined in the Laddering elicitation technique [IR.8]. From this elicitation data, it is understood that the sponsor prefers an application
 						that is efficient and stable rather than an application with a wide variety of features that consumes a lot of space and may be susceptible to crashes.</p>
 				</div>
@@ -1635,34 +1643,33 @@
 				keep input-fields and conversations “very limited”. [IR.7] By limiting character input lengths and input formats, the application follows the sponsor’s guidelines to prevent the application itself from being a place for people to talk,
 				socialize, and get to know each other. [IR.7] </p>
 			<div class="indent">
-				<h3><span class="id">DC.1</span>Input Constraints</h3>
+				<h3><span class="id">DCS.1</span>Input Constraints</h3>
 				<p>The input constraints define constraints that fulfill the need for application security. By limiting character input lengths, the risk of a buffer-overflow attack is mitigated. The input constraints also enforce the sponsor’s guidelines
 					to keep input-fields and conversations “very limited”. [IR.7] By limiting character input lengths and input formats, the application follows the sponsor’s guidelines to prevent the application itself from being a place for people to
 					talk, socialize, and get to know each other. [IR.7] </p>
 				<div class="indent">
-					<h4><span class="id">DC.1.1</span>The Commercial User system shall require that text input is limited to a set number of characters for description text fields. [PF.2.15]</h4>
-					<h4><span class="id">DC.1.2</span> The Ratings system shall require that text input is limited to a set number of characters for ratings text fields. [PF.2.23]</h4>
-					<h4><span class="id">DC.1.3</span>The Profile system shall require that text input is limited to a set number of characters for profile text fields. [PF.1.5]</h4>
-					<h4><span class="id">DC.1.4</span>The Message system shall require that text input is limited to a set number of characters for conversation text fields [PF.1.11]</h4>
-					<h4><span class="id">DC.1.5</span>The Login system shall require that text input is limited to a set number of characters for password text-fields. [PF.1.6, PF.2.12]</h4>
-					<h4><span class="id">DC.1.6</span>The Login system shall require that text input is limited to a set number of characters for username text-fields. [PF.1.6, PF.2.12]</h4>
-					<h4><span class="id">DC.1.7</span>The Message system shall allow utf-8 characters to be input in conversation text fields. [PF.1.11]</h4>
-					<h4><span class="id">DC.1.8</span>The Message system shall allow Emoji characters to be input in conversation text fields. [PF.1.11]</h4>
+					<h4><span class="id">DCS.1.1</span>The Commercial User system shall require that text input is limited to a set number of characters for description text fields. [PO.2.2.11]</h4>
+					<h4><span class="id">DCS.1.2</span>The Profile system shall require that text input is limited to a set number of characters for profile text fields. [PO.2.1.4]</h4>
+					<h4><span class="id">DCS.1.3</span>The Message system shall require that text input is limited to a set number of characters for conversation text fields [PO.2.1.12]</h4>
+					<h4><span class="id">DCS.1.4</span>The Login system shall require that text input is limited to a set number of characters for password text-fields. [PO.2.1.6, PO.2.2.9]</h4>
+					<h4><span class="id">DCS.1.5</span>The Login system shall require that text input is limited to a set number of characters for username text-fields. [PO.2.1.6, PO.2.2.9]</h4>
+					<h4><span class="id">DCS.1.6</span>The Message system shall allow utf-8 characters to be input in conversation text fields. [PO.2.1.12]</h4>
+					<h4><span class="id">DCS.1.7</span>The Message system shall allow Emoji characters to be input in conversation text fields. [PO.2.1.12]</h4>
 				</div>
 
-				<h3><span class='id'>DC.2</span>Payment Constraints</h3>
+				<h3><span class='id'>DCS.2</span>Payment Constraints</h3>
 				<p>The Payment Constraints define constraints for how Commercial Users will fulfill “Uvents” charges. Accepting credit cards or requesting invoices directly through the application may present unnecessary security risks and liabilities.
 				</p>
 				<div class="indent">
-					<h4><span class="id">DC.2.1</span>The Payments system shall require that Commercial Users complete funds transfers through a Third-Party payment provider. [PF.2.9] </h4>
+					<h4><span class="id">DCS.2.1</span>The Payments system shall require that Commercial Users complete funds transfers through a Third-Party payment provider. [PO.2.2.3] </h4>
 				</div>
 
-				<h3><span class='id'>DC.3</span>Account Constraints</h3>
+				<h3><span class='id'>DCS.3</span>Account Constraints</h3>
 				<p>The Account Constraints define the constraints for the Create New Account system.  This provides constraints to the number of accounts that an individual may be capable of creating. In the case that an individual has access to multiple
 					Third-Party accounts or multiple phone numbers, they would technically be capable of creating multiple accounts. </p>
 				<div class="indent">
-					<h4><span class="id">DC.3.1</span>The Create New Account system shall limit account creation to one Commercial User or one Consumer User account per one Third-Party linked account. [PF.1.1]</h4>
-					<h4><span class="id">DC.3.2</span>The Create New Account system shall limit account creation to one Commercial User or one Consumer User account per one phone number. [PF.1.1]</h4>
+					<h4><span class="id">DCS.3.1</span>The Create Account system shall limit account creation to one Commercial User or one Consumer User account per one Third-Party linked account. [PO.2.1.1, PO.2.2.1]</h4>
+					<h4><span class="id">DCS.3.2</span>The Create Account system shall limit account creation to one Commercial User or one Consumer User account per one phone number. [PO.2.1.1, PO.2.2.1]</h4>
 				</div>
 			</div>
 
@@ -3136,42 +3143,37 @@
 						input-fields and conversations “very limited”. [IR.7] By verifying that we are limiting character input lengths, the risk of a buffer-overflow attack is mitigated. Additionally, we will verify that by limiting character input lengths
 						and input formats, the application will follow the sponsor’s guidelines to prevent the application itself from being a place for people to talk, socialize, and get to know each other. [IR.7] </p>
 					<div class="indent">
-						<h4><span class="id">DCV.1.1</span>Verify that The Commercial User system requires that text input is limited to a set number of characters for description text fields. [Req DC.1.1]</h4>
+						<h4><span class="id">DCV.1.1</span>Verify that The Commercial User system requires that text input is limited to a set number of characters for description text fields. [Req DCS.1.1]</h4>
 						<ul>
 							<li>Testing Technique: Demonstration</li>
 							<li>Workflow: Through the demo method we will test the character limit for description text fields by inputting one more than the maximum number of characters allowed. </li>
 						</ul>
-						<h4><span class="id">DCV.1.2</span>Verify that the Ratings system requires that text input is limited to a set number of characters for ratings text fields. [Req DC.1.2] </h4>
-						<ul>
-							<li>Testing Technique: Demonstration </li>
-							<li>Workflow: Through the demonstration method we will test the character limit for ratings text fields by inputting one more than the maximum number of characters allowed.</li>
-						</ul>
-						<h4><span class="id">DCV.1.3</span>Verify that the Profile system requires that text input is limited to a set number of characters for profile text fields. [Req DC.1.3] </h4>
+						<h4><span class="id">DCV.1.2</span>Verify that the Profile system requires that text input is limited to a set number of characters for profile text fields. [Req DCS.1.2] </h4>
 						<ul>
 							<li>Testing Technique: Demonstration </li>
 							<li>Workflow: Through the demonstration method we will test the character limit for profile text fields by inputting one more than the maximum number of characters allowed.</li>
 						</ul>
-						<h4><span class="id">DCV.1.4</span>Verify that the Message system requires that text input is limited to a set number of characters for conversation text fields. [Req DC.1.4]</h4>
+						<h4><span class="id">DCV.1.3</span>Verify that the Message system requires that text input is limited to a set number of characters for conversation text fields. [Req DCS.1.3]</h4>
 						<ul>
 							<li>Testing Technique: Demonstration </li>
 							<li>Workflow: Through the demonstration method we will test the character limit for conversation text fields by inputting one more than the maximum number of characters allowed</li>
 						</ul>
-						<h4><span class="id">DCV.1.5</span>Verify that the Login system requires that text input is limited to a set number of characters for password text fields. [Req DC.1.5]</h4>
+						<h4><span class="id">DCV.1.4</span>Verify that the Login system requires that text input is limited to a set number of characters for password text fields. [Req DCS.1.4]</h4>
 						<ul>
 							<li>Testing Technique: Demonstration </li>
 							<li>Workflow: Through the demonstration method we will test the character limit for password text fields by inputting one more than the maximum number of characters allowed </li>
 						</ul>
-						<h4><span class="id">DCV.1.6</span>Verify that the Login system requires that text input is limited to a set number of characters for username text fields. [Req DC.1.6]</h4>
+						<h4><span class="id">DCV.1.5</span>Verify that the Login system requires that text input is limited to a set number of characters for username text fields. [Req DCS.1.5]</h4>
 						<ul>
 							<li>Testing Technique: Demonstration </li>
 							<li>Workflow: Through the demonstration method we will test the character limit for username text fields by inputting one more than the maximum number of characters allowed.</li>
 						</ul>
-						<h4><span class="id">DCV.1.7</span>Verify that the Message system allows utf-8 characters to be input in conversation text fields. [Req DC.1.7]</h4>
+						<h4><span class="id">DCV.1.6</span>Verify that the Message system allows utf-8 characters to be input in conversation text fields. [Req DCS.1.6]</h4>
 						<ul>
 							<li>Testing Technique: Demonstration </li>
 							<li>Workflow: Through the demonstration method we will test that only utf-8 characters are able to be input into conversation text fields by attempting to input images or files in messaging text fields that should not be accepted.</li>
 						</ul>
-						<h4><span class="id">DCV.1.8</span>Verify that the Message system allows Emoji characters to be input in conversation text fields. [Req DC.1.8]</h4>
+						<h4><span class="id">DCV.1.7</span>Verify that the Message system allows Emoji characters to be input in conversation text fields. [Req DCS.1.7]</h4>
 						<ul>
 							<li>Testing Technique: Demonstration </li>
 							<li>Workflow: Through the demonstration method we will test that Emoji characters are able to be input into conversation text fields by inputting Emojis into conversation text fields to ensure they are accepted.
@@ -3184,7 +3186,7 @@
 					<p>The Payment Constraints Verification will define the verification for the payment constraints that pertain to how Commercial Users fulfill “Uvents” charges. We will verify that accepting credit cards or requesting invoices directly
 						through the application will not present unnecessary security risks and liabilities.</p>
 					<div class="indent">
-						<h4><span class="id">DCV.2.1</span>Verify that the Payments system requires that Commercial Users complete fund transfers through a Third-Party payment provider. [Req DC.2.1]</h4>
+						<h4><span class="id">DCV.2.1</span>Verify that the Payments system requires that Commercial Users complete fund transfers through a Third-Party payment provider. [Req DCS.2.1]</h4>
 						<ul>
 							<li>Testing Technique: Demonstration</li>
 							<li>Workflow: Through the demonstration method we will test that Commercial Users can transfer funds through a Third-Party payment provider by attempting an in-app payment and ensuring that it is accepted. </li>
@@ -3195,12 +3197,12 @@
 					<p>The Account Constraints Verification will verify the account constraints for account creation. We will provide verification for the constraints that pertain to the number of accounts that an individual may be capable of creating. We
 						will verify that if an individual has access to multiple Third-Party accounts or multiple phone numbers, they would, by definition, be capable of creating multiple accounts.</p>
 					<div class="indent">
-						<h4><span class="id">DCV.3.1</span>Verify that the account creation system limits account creation to one Commercial User or one Consumer User account per one Third-Party linked account. [Req DC.3.1] </h4>
+						<h4><span class="id">DCV.3.1</span>Verify that the account creation system limits account creation to one Commercial User or one Consumer User account per one Third-Party linked account. [Req DCS.3.1] </h4>
 						<ul>
 							<li>Testing Technique: Demonstration</li>
 							<li>Workflow: Through the demonstration method we will test that the account creation is limited by attempting to create multiple accounts through one Third-Party linked account.</li>
 						</ul>
-						<h4><span class="id">DCV.3.2</span> Verify that the account creation system limits account creation to one Commercial User or one Consumer User account per one phone number. [Req DC.3.2]</h4>
+						<h4><span class="id">DCV.3.2</span> Verify that the account creation system limits account creation to one Commercial User or one Consumer User account per one phone number. [Req DCS.3.2]</h4>
 						<ul>
 							<li>Testing Technique: Demonstration</li>
 							<li>Workflow: Through the demonstration method we will test that the account creation is limited by attempting to create multiple accounts through one phone number. </li>
