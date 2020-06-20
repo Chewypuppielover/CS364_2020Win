@@ -261,6 +261,19 @@
 		</table>
 	</div>
 	<div class="super-page">
+		<div>
+			<h1>Table of Figures</h1><br><br>
+			<div class="center">
+				<a href="">Consumer User Login Workflow</a><br>
+				<a href="">Consumer User Homescreen Workflow</a><br>
+				<a href="">Consumer User Event Workflow</a><br>
+				<a href="">Commercial User Login Workflow</a><br>
+				<a href="">Commercial User Homescreen Workflow</a><br>
+				<a href="">Commercial User Event Workflow</a><br>
+				<a href="">Admin Login Workflow</a><br>
+				<a href="">Admin Home Screen Workflow</a>
+			</div>
+		</div>
 		<a name="Introduction"></a>
 		<h1><span class="id">1</span>Introduction</h1>
 		<p>Uvents is a mobile application that brings the community together by allowing</p>
@@ -538,20 +551,46 @@
 					</ul>
 				</div>
 
-				<h3><span class="id">PO.3</span> User Characteristics </h3>
+				<h3><span class="id">PO.3</span> User Characteristics</h3>
 				<a name="user"></a>
 				<p>Uvents will have 3 types of users: consumer, commercial, and admin.</p>
 				<div class="indent">
-					<h4 class="big"><span class="id">PO.3.1</span> Consumer User</h4>
-					<p>The consumers user perceives Uvents as a way to be notified of events in their local area. Uvents will be a platform where the consumer user receives notifications of the events posted. Consumer users will be able to view group events posted by commercial users. Consumer users will have the ability to create events for themselves and other consumer users to attend. Consumer users have the ability to communicate with other consumer users within an event.</p>
+					<h4 class="big"><span class="id">PO.3.1</span> Consumer Users</h4>
+					<p>Uvents is a platform where the consumer user receives notifications of the events posted. Consumer users can view events posted by commercial users. Consumer users will have the ability to create group events for themselves and other consumer users to attend. Consumer users will be able to communicate with other consumer users within a group event.</p>
 					<h4 class="big"><span class="id">PO.3.2</span>Commercial Users</h4>
-					<p>From the perspective of the commercial user, Uvents is a platform where they can advertise the products and services they offer. The commercial user’s goal is to acquire more customers and increase visibility in the local community. Each month, the commercial user will have the ability to post one group event and bid against other consumer users for higher visibility for that group event within Uvents. Group events posted by higher bidding commercial users will be seen more often by consumer users.</p>
+					<p>Uvents is a platform where commercial users can advertise the products and services they offer. The commercial user’s goal is to acquire more customers and increase visibility in the local community. Each month, the commercial user will have the ability to post one group event and bid against other commercial users for higher visibility for that group event within Uvents. Group events posted by higher bidding commercial users will be seen more often by consumer users.</p>
 					<h4 class="big"><span class="id">PO.3.3</span>Admin Users</h4>
 					<p>The admin users’ job is to maintain and moderate Uvents, such that the commercial and consumer users are satisfied with its workings and all issues are resolved quickly and efficiently.</p>
-					<h4 class="big"><span class="id">PO.3.4</span>Workflows</h4>
-					<img alt="Workflow Consumer User" title="ConsChart" src="./images/workflow-consumer.png" />
-					<img alt="Workflow Commercial User" title="CommChart" src="./images/workflow-commercial.png" />
-					<img alt="Workflow Admin User" title="AdminChart" src="./images/workflow-admin.png" />
+					
+					<h4 class="big"><span class="id">PO.3.4</span>Consumer User Workflows</h4>
+					<p>PO.3.4.1 Login Workflow<br>
+					The process the consumer user will follow when logging in.</p>
+					<img alt="Workflow Consumer User" title="ConsChart" src="./images/Cons Start.png" />
+					<p>PO.3.4.2 Home Screen Workflow<br>
+					The process the consumer user will follow when editing profile information and seeing joined group events or messages.</p>
+					<img alt="Workflow Commercial User" title="CommChart" src="./images/Cons Home.png" />
+					<p>PO.3.4.3 Event Workflow<br>
+					The process the consumer user will follow when creating and joining a group event.</p>
+					<img alt="Workflow Admin User" title="AdminChart" src="./images/Cons Event.png" />
+					
+					<h4 class="big"><span class="id">PO.3.5</span>Commercial User Workflows</h4>
+					<p>PO.3.5.1 Login Workflow<br>
+					The process the commercial user will follow when logging in.</p>
+					<img alt="Workflow Consumer User" title="ConsChart" src="./images/Comm Start.png" />
+					<p>PO.3.5.2 Home Screen Workflow<br>
+					The process the commercial user will follow when editing profile information and viewing events.</p>
+					<img alt="Workflow Commercial User" title="CommChart" src="./images/Comm Home.png" />
+					<p>PO.3.5.3 Event Workflow<br>
+					The process the commercial user will follow when viewing past events and creating events.</p>
+					<img alt="Workflow Admin User" title="AdminChart" src="./images/Comm Event.png" />
+					
+					<h4 class="big"><span class="id">PO.3.6</span>Admin User Workflows</h4>
+					<p>PO.3.6.1 Login Workflow<br>
+					The process admin user will follow when creating or logging into an account on the Uvents application.</p>
+					<img alt="Workflow Consumer User" title="ConsChart" src="./images/Admin Start.png" />
+					<p>PO.3.6.2 Home Screen Workflow<br>
+					The process followed by admin user when editing or deleting events and group events created by commercial and consumer users and when editing or deleting consumer user or commercial user accounts.</p>
+					<img alt="Workflow Commercial User" title="CommChart" src="./images/Admin Home.png" />
 				</div>
 
 				<h3><span class="id">PO.4</span> Limitations </h3>
@@ -784,67 +823,46 @@
 		<p>The Specification explains the detailed requirements for the Uvents application. The Specification covers external interfaces, functionality, usability, performance, database, design constraints, and software system attributes requirements for
 			the Uvents application. The Specification also covers supporting information found from using the elicitation techniques for the Product Features.</p>
 		<div class="indent">
-			<h2><span class="id">3.1</span> External interfaces</h2>
+			<h2><span class="id">3.1</span> External Interfaces Specification</h2>
 			<a name="Interface"></a>
 			<div class="indent">
 				<h3>EIS.1 Database</h3>
 				<div class="indent">
 					<p>A database will be used to store Uvents account and event information. Specific requirements for the database can be found in section LDR.</p>
-					<ul class="unlabeled">
-						<li>EIS.1.1 The database shall store consumer user accounts [PF.1.1, PF.1.5].</li>
-						<li>EIS.1.2 The database shall store commercial user accounts [PF.2.1, PF.2.2, PF.2.5, PF.2.7].</li>
-						<li>EIS.1.3 The database shall store admin user accounts [PF.3.4, PF.3.6].</li>
-						<li>EIS.1.4 The database shall store events [PF.2.14, PF.2.17, PF.2.18].</li>
-						<li>EIS.1.5 The database shall store group events [PF.1.4, PF.1.8, PF.1.9, PF.1.12].</li>
-						<li>EIS.1.6 The database shall store monthly bidding information for commercial user accounts [PF.2.21].</li>
-						<li>EIS.1.7 The database shall store information about connected consumer user social media accounts [PF.1.6].</li>
-						<li>EIS.1.8 The database shall store information about connected commercial user social media accounts [PF.2.22].</li>
-						<li>EIS.1.9 Upon request commercial users shall receive a report of their bidding history [2.1.6].</li>
-					</ul>
+					<p>EIS.1.1 The database shall store consumer user accounts [PO.2.1.1].</p>
+					<p>EIS.1.2 The database shall store commercial user accounts [PO.2.2.1].</p>
+					<p>EIS.1.3 The database shall store admin user accounts [PO.2.3.6].</p>
+					<p>EIS.1.4 The database shall store events [PO.2.2.9].</p>
+					<p>EIS.1.5 The database shall store group events [PO.2.1.7].</p>
+					<p>EIS.1.6 The database shall store monthly bidding information for commercial user accounts [PO.2.2.15, PO.2.2.16].</p>
+					<p>EIS.1.7 The database shall store information about connected consumer user social media accounts [PO.2.1.6].</p>
+					<p>EIS.1.8 The database shall store information about connected commercial user social media accounts [PO.2.2.15, PO.2.2.17].</p>
+					<p>EIS.1.9 Upon request commercial users shall receive a report of their bidding history [PO.2.2.21].</p>
 				</div>
-				<h3>EIS.2 Google Maps/GPS</h3>
-				<div class="indent">
-					<p>Google Maps API will be used to map the available local events and group events posted by commercial users and consumer users.</p>
-					<ul class="unlabeled">
-						<li>EIS.2.1 The map interface shall allow consumer users to view local events on a map [2.1.7, 2.1.11, 2.1.13]</li>
-						<li>EIS.2.2 The map interface shall allow consumer users to view their distance from local event locations.</li>
-						<li>EIS.2.3 The map interface shall allow consumer users to view directions to local event locations.</li>
-					</ul>
-				</div>
-				<h3>EIS.3 Facebook</h3>
+				<h3>EIS.2 Facebook</h3>
 				<div class="indent">
 					<p>Facebook’s API will be used according to the standards of the stakeholders allowing users to share activities on the social platform.</p>
-					<ul class="unlabeled">
-						<li>EIS.3.1 Consumer users shall have the ability to share events on the Facebook platform if logged into the user’s Facebook account. [1.3.1.4.1]</li>
-					</ul>
+					<p>EIS.3.1 Consumer users shall have the ability to share events on the Facebook platform if logged into the user’s Facebook account.[PO.1.4.1]</p>
 				</div>
-				<h3>EIS.4 Instagram </h3>
+				<h3>EIS.3 Instagram </h3>
 				<div class="indent">
 					<p>Instagram's API will be used according to the standards of the stakeholders allowing users to share activities on the social platform.</p>
-					<ul class="unlabeled">
-						<li>EIS.4.1 Consumer users shall have the ability to share events on the Instagram platform if logged into the consumer user’s Instagram account. [1.3.1.4.1]</li>
-					</ul>
+					<p>EIS.4.1 Consumer users shall have the ability to share events on the Instagram platform if logged into the consumer user’s Instagram account. [PO.1.4.1]</p>
 				</div>
-				<h3>EIS.5 Twitter</h3>
+				<h3>EIS.4 Twitter</h3>
 				<div class="indent">
 					<p>Twitter’s API will be used according to the standards of the stakeholders allowing users to share activities on the social platform.</p>
-					<ul class="unlabeled">
-						<li>EIS 5.1 Consumer users shall have the ability to share events on the Twitter platform if logged into the consumer user’s Twitter account. [1.3.1.4.1]</li>
-					</ul>
+					<p>EIS 5.1 Consumer users shall have the ability to share events on the Twitter platform if logged into the consumer user’s Twitter account. [PO.1.4.1]</p>
 				</div>
-				<h3>EIS.6 PayPal</h3>
+				<h3>EIS.5 PayPal</h3>
 				<div class="indent">
 					<p>PayPal Developer API will be used by commercial users to place bids.</p>
-					<ul class="unlabeled">
-						<li>EIS.6.1 API shall allow commercial users to pay Uvents' charges each month. [PF.2.3]</li>
-					</ul>
+					<p>EIS.6.1 API shall allow commercial users to pay Uvents' charges each month. [PO.2.2.3]</p>
 				</div>
-				<h3>EIS.7 Google Pay</h3>
+				<h3>EIS.6 Google Pay</h3>
 				<div class="indent">
 					<p>Google Pay API will be used by commercial users to place bids.</p>
-					<ul class="unlabeled">
-						<li>EIS.7.1 API shall allow commercial users to pay Uvents' charges each month. [PF.2.3]</li>
-					</ul>
+					<p>EIS.7.1 API shall allow commercial users to pay Uvents' charges each month. [PO.2.2.3]</p>
 				</div>
 				<a name="Functions"></a>
 			</div>
@@ -1649,16 +1667,16 @@
 			</div>
 
 
-			<h2><span class="id">3.7</span> Software system attributes</h2>
+			<h2><span class="id">3.7</span> Software System Attributes</h2>
 			<a name="System"></a>
-			<p>Requirements that don’t fit neatly in a single component.</p>
+			
 			<div class="indent">
 				<h3><span class="id">SAS.1</span>Reliability</h3>
 				<div class="indent">
 					<h4><span class="id">SAS.1.1</span>Applications shall not have any errors in the code causing the application to close or have issues. </h4>
 					<div class=indents>
-						<h5><span class="id">SAS.1.1.1</span>There will be functions in the software that perform verifications to catch errors before the application breaks or force closes.</h5>
-						<h5><span class="id">SAS.1.1.2</span>System in place to verify if information matches on the server side and the application side.</h5>
+						<h5><span class="id">SAS.1.1.1</span>There will be functions in the software that perform verifications to catch errors before the application breaks or force closes. [PO.4.9] </h5>
+						<h5><span class="id">SAS.1.1.2</span>System in place to verify if information matches on the server side and the application side. [PO.1.5.1] </h5>
 					</div>
 
 
@@ -1670,29 +1688,36 @@
 					<div class="indent">
 						<h5><span class="id">SAS.2.1.1</span>Account creation</h5>
 						<div class="indent">
-							<h6><span class="id">SAS.2.1.1.1</span>Commercial user information shall only be available to those who should have access to it</p>
-								<h6><span class="id">SAS.2.1.1.2</span>On account creation end users shall be required to supply gender, age, etc.</h6>
+							<h6><span class="id">SAS.2.1.1.1</span>Commercial user information shall only be available to those who should have access to it. [PO.2.1.5]</p>
+								<h6><span class="id">SAS.2.1.1.2</span>On account creation end users shall be required to supply gender, age, etc. [PO.2.1.1]</h6>
 						</div>
 					</div>
 
 					<h4><span class="id">SAS.2.3</span>Profile Blocking</h4>
 					<div class="indent">
-						<h5><span class="id">SAS.2.3.1</span>The commercial user shall be allowed to block messages from another commercial user[PF.2.10]</h5>
+						<h5><span class="id">SAS.2.3.1</span>The commercial user shall be allowed to block messages from another commercial user. [PO.1.7.24]</h5>
 					</div>
 					<h4><span class="id">SAS.2.4</span>Data privacy</h4>
 					<div class="indent">
-						<h5>The commercial user’s data shall be hidden from all other users and encrypted</h5>
+						<h5><span class=id>SAS.2.2.1</span> The commercial user’s data shall be hidden from all other users and encrypted. [PO.1.5.1]</h5>
+					</div>
+					<h4><span class="id">SAS.2.5</span>Login</h4>
+					<div class=indent>
+						<h5><span class=id>SAS.2.5.1</span>Creating an account shall be secure. [PO.1.1, PO.2.1, PO.3.6]</h5>
+						<h5><span class=id>SAS.2.5.2</span>All users shall be able to securely log in to their accounts. [PO.1.6, PO.2.12, PO.3.5]</h5>
+						<h5><span class=id>SAS.2.5.3</span>Uvents shall remove all user’s information once the user is logged out. [PO.2.13, PO.3.13]</h5>
 					</div>
 				</div>
 			</div>
 			<div class="indent">
 				<h3><span class="id">SAS.3</span>Maintainability</h3>
 				<div class="indent">
-					<h4><span class="id">SAS.3.1</span>User Accounts and business accounts shall be separate</h4>
-					<h4><span class="id">SAS.3.2</span>A reporting feature that will allow for users to send a report that can then be used to determine if an account is a spam or fake account.</h4>
+					<h4><span class="id">SAS.3.1</span>A reporting feature that will allow for users to send a report that can then be used to determine if an account is a spam or fake account.</h4>
 					<div class="indent">
-						<h5><span class="id">SAS.3.2.1</span>After an account is reported if it meets the required threshold it will flag the account so an administrator of the app can review the account</h5>
+						<h5><span class="id">SAS.3.1.1</span>After an account is reported if it meets the required threshold it will flag the account so an administrator of the app can review the account</h5>
 					</div>
+					<h4><span class="id">SAS.3.2</span>Admin users shall be able to remove inappropriate media. [PO.2.16]</h4>
+					<h4><span class="id">SAS.3.3</span>Admin users shall be able to remove users for being inactive if the users have not used Uvents for a specified amount of time. [PO 3.7]</h4>
 				</div>
 
 				<h3><span class="id">SAS.4</span>Portability</h3>
@@ -1719,9 +1744,38 @@
 				be separated into different steps in order to validate the different parts. Each verification statement will map to one requirement specifically. Each verification statement will include the testing technique, a method to accomplish that
 				technique, and the workflow step. </p>
 			<a name="FV"></a>
-
-
-			<h2><span class="id">3.2</span>Functions Verification</h2>
+			<h2><span class="id">4.1</span>External Interfaces Verification</h2>
+			<div class="indent">
+				<p>The External Interfaces verification defines the verification for External interfaces that pertain to the Uvents application.</p>
+				<h3>EIV.1 Database Verification</h3>
+				<p>EIV.1.1 Verify that the database can store consumer user accounts [EIS.1.1].</p>
+				<p>EIV.1.2 Verify that the database can store commercial user accounts [EIS.1.2].</p>
+				<p>EIV.1.3 Verify that the database can store admin user accounts [EIS.1.3].</p>
+				<p>EIV.1.4 Verify that the database can store events [EIS.1.4].</p>
+				<p>EIV.1.5 Verify that the database can store group events [EIS.1.5].</p>
+				<p>EIV.1.6 Verify that the database can store monthly bidding information for commercial user accounts [EIS.1.6].</p>
+				<p>EIV.1.7 Verify that the database can store information about connected consumer user social media accounts [EIS.1.7].</p>
+				<p>EIV.1.8 Verify that the database can store information about connected commercial user social media accounts [EIS.1.8].</p>
+				<p>EIV.1.9 Verify that upon request commercial users can receive a report of their bidding history [EIS.1.9].</p>
+				<h3>EIV.2 Share events via Facebook Verification</h3>
+				<p>EIV.2.1 Verify that consumer users can log into Facebook account [EIS.2.1].</p>
+				<p>EIV.2.2 Verify that shared event can be posted on the Facebook platform [EIS.2.1].</p>
+				<p>EIV.2.3 Verify that the shared event can load event details on the Uvents app [EIS.2.1].</p>
+				<h3>Share events via Instagram Verification</h3>
+				<p>EIV.3.1 Verify that consumer users can log into Instagram account [EIS.3.1].</p>
+				<p>EIV.3.2 Verify that shared event can be posted on the Instagram platform [EIS.3.1].</p>
+				<p>EIV.3.3 Verify that the shared event can load event details on the Uvents app [EIS.3.1].</p>
+				<h3>Share events via Twitter Verification</h3>
+				<p>EIV.4.1 Verify that consumer users can log into Twitter account [EIS.4.1].</p>
+				<p>EIV.4.2 Verify that shared event can be posted on the Twitter platform [EIS.4.1].</p>
+				<p>EIV.4.3 Verify that the shared event can load event details on the Uvents app [EIS.4.1].</p>
+				<h3>PayPal Verification</h3>
+				<p>EIV.5.1 Verify that the API allows commercial users to pay Uvents’ charges each month [EIS.5.1].</p>
+				<h3>Google Pay Verification</h3>
+				<p>EIV.6.1 Verify that the API allows commercial users to pay Uvents’ charges each month [EIS.6.1].</p>
+			</div>
+			
+			<h2><span class="id">4.2</span>Functions Verification</h2>
 			<div class="indent">
 				<u><h3>Consumer</h3></u>
 			</div>
@@ -3168,11 +3222,17 @@
 					</div>
 					<h3><span class="id">SAV.2</span>Security</h3>
 					<div class="indent">
-						<h4><span class="id">SAV.2.1</span>The system fails if it doesn’t have a secure method to store user information. Otherwise it succeeds.</h4>
+						<h4><span class="id">SAV.2.1</span>The system fails if it doesn’t have a secure method to store user information. Otherwise it succeeds. (SAS.2.1)</h4>
 
-						<h4><span class="id">SAV.2.2</span>Verify that the end user shall be able to create their own account and supply important information. (Req. SAS.2.1)</h4>
-						<h4><span class="id">SAV.2.3</span>Verify that end users can block other users (Req. SAS.3.4)</h4>
-						<h4><span class="id">SAV.2.4</span>Verify that certain commercial user data is hidden from other users (Req. SAS.3.5)</h4>
+						<h4><span class="id">SAV.2.2</span>Verify that the end user shall be able to create their own account and supply important information. (Req. SAS.2.2)</h4>
+						<h4><span class="id">SAV.2.3</span>Verify that end users can block other users (Req. SAS.2.3)</h4>
+						<h4><span class="id">SAV.2.4</span>Verify that certain commercial user data is hidden from other users (Req. SAS.2.4)</h4>
+						<h4><span class="id">SAV.2.5</span>Login</h4>
+						<div id=indent>
+							<h5><span class=id>SAV.2.5.1</span>Verify that creating an account shall be secure. [SAS.2.5.1]</h5>
+							<h5><span class=id>SAV.2.5.2</span>Verify that all users shall be able to securely log in to their accounts. [SAS.2.5.2]</h5>
+							<h5><span class=id>SAV.2.5.3</span>Verify that Uvents shall remove all user’s information once the user is logged out. [SAS.2.5.3] </h5>
+						</div>
 					</div>
 					<h3><span class="id">SAV.3</span>Maintainability</h3>
 					<div class="indent">
@@ -3182,6 +3242,8 @@
 						<div class=indent>
 							<h5><span class="id">SAV.3.2.1</span>Verify that reported accounts are flagged for the administrator (Req 3.1.2.1)</h5>
 						</div>
+						<h4><span class="id">SAV.3.3</span>Verify that Admin users can remove inappropriate media. [SAS.3.2]</h4>
+						<h4><span class="id">SAV.3.4</span>Verify that Admin users shall be able to remove users for being inactive if the users have not used Uvents for a specified amount of time. [SAS.3.3]</h4>
 					</div>
 					<h3><span class="id">SAV.4</span>Portability</h3>
 					<div class="indent">
